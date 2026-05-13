@@ -21,16 +21,14 @@ const MainPage = () => (
 
             <div class="profile-info">
               <h2>Zoe Miller, 22</h2>
+              <button class="match-btn">+ Mate</button>
               <p>4 Mutual Mates</p>
-
               <div class="tags">
                 <div class="tag">Bollywood Nights</div>
                 <div class="tag">Chill Crowd</div>
                 <div class="tag">Party Regular</div>
               </div>
             </div>
-
-            <button class="match-btn">+ Mate</button>
           </div>
 
           <div class="actions">

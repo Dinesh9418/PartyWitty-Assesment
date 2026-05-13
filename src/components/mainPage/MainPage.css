@@ -49,21 +49,25 @@
 }
 
 .profile-info h2 {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: left;
+  color: aliceblue;
 }
 
 .profile-info p {
-  font-size: 14px;
+  font-size: 10px;
   margin-top: 4px;
+  text-align: left;
   color: #ddd;
 }
 
 .tags {
-  display: flex;
   gap: 10px;
-  margin-top: 12px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* margin-top: 12px; */
+  font-size: 5px;
 }
 
 .tag {
@@ -71,14 +75,14 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 6px 12px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 8px;
   backdrop-filter: blur(10px);
 }
 
 .match-btn {
   position: absolute;
   right: 20px;
-  bottom: 55px;
+  bottom: 75px;
   background: linear-gradient(to right, #8b3dff, #ff3f8e);
   border: none;
   color: #fff;
