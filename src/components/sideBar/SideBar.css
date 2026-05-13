@@ -3,7 +3,7 @@
 .sidebar {
   width: 230px;
   background: #f3efef;
-  border-right: 2px dashed #8d5cff;
+  /* border-right: 2px dashed #8d5cff; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

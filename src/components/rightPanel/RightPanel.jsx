@@ -12,7 +12,6 @@ const RightPanel = () => {
           />
 
           <h3>Make Your First Move</h3>
-
           <p>
             Verify your profile to start sending invites and offering drinks.
           </p>
@@ -57,7 +56,7 @@ const RightPanel = () => {
         </div>
 
         <button class="verify-btn">Get Verified</button>
-
+        <p className="get"> Takes less than 60 seconds</p>
         <div class="later">Maybe later</div>
       </div>
     </div>
