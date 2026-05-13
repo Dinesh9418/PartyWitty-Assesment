@@ -1,0 +1,101 @@
+/* RIGHT PANEL */
+
+.right-panel {
+  width: 320px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.user-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.user-box img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #6c4cff;
+}
+
+.user-box h3 {
+  margin-top: 12px;
+  font-size: 24px;
+}
+
+.user-box p {
+  color: #777;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.steps h4 {
+  margin-bottom: 20px;
+}
+
+.step {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.step img {
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.step-content h5 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.step-content p {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.benefits {
+  margin: 25px 0;
+}
+
+.benefits p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.verify-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(to right, #b62eff, #ff4f7b);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.later {
+  text-align: center;
+  margin-top: 14px;
+  color: #888;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.card {
+  background: linear-gradient(135deg, rgba(107, 76, 255, 0.08), rgba(170, 59, 255, 0.06));
+  border: 1px solid rgba(107, 76, 255, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  border-color: rgba(107, 76, 255, 0.4);
+  box-shadow: 0 8px 24px rgba(107, 76, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  margin: 0;
+  color: #6b4cff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
