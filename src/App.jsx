@@ -5,6 +5,7 @@ import "./App.css";
 import RightPanel from "./components/rightPanel/RightPanel";
 import VerifyButton from "./pages/verify/VerifyButton";
 import { Route, Routes } from "react-router-dom";
+import VerifySuccess from "./pages/verify/VerifySuccess";
 
 function App() {
   return (

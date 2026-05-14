@@ -11,8 +11,8 @@ const RightPanel = () => {
   const handleShow = () => setShow(true);
   return (
     <div>
-      <div class="right-panel">
-        <div class="user-box">
+      <div className="right-panel">
+        <div className="user-box">
           <img
             src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
             alt="user"
@@ -24,62 +24,53 @@ const RightPanel = () => {
           </p>
         </div>
 
-        <div class="steps">
+        <div className="steps">
           <h4>How It Works</h4>
 
-          <div class="step">
+          <div className="step">
             <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200&auto=format&fit=crop" />
 
-            <div class="step-content">
+            <div className="step-content">
               <h5>Spot Your Person</h5>
               <p>Pick someone you'd genuinely enjoy going out with.</p>
             </div>
           </div>
 
-          <div class="step">
+          <div className="step">
             <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200&auto=format&fit=crop" />
 
-            <div class="step-content">
+            <div className="step-content">
               <h5>Send a Drink</h5>
               <p>Offer their first drink your way of saying let's go out.</p>
             </div>
           </div>
 
-          <div class="step">
+          <div className="step">
             <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200&auto=format&fit=crop" />
 
-            <div class="step-content">
+            <div className="step-content">
               <h5>They Accept</h5>
               <p>Once accepted, it's a confirmed plan. No endless chatting.</p>
             </div>
           </div>
         </div>
 
-        <div class="benefits">
+        <div className="benefits">
           <p>✅ Get noticed faster</p>
           <p>✅ Higher chances your invite gets accepted</p>
           <p>✅ Unlock drink invites & premium interactions</p>
           <p>✅ Build trust with every profile visit</p>
         </div>
 
-        <button class="verify-btn">
-          <Button className="go-btn" variant="primary" onClick={handleShow}>
-            GET VERIFIED
-          </Button>
-        </button>
+        <Button className="verify-btn" variant="primary" onClick={handleShow}>
+          GET VERIFIED
+        </Button>
 
         <p className="get"> Takes less than 60 seconds</p>
-        <div class="later">Maybe later</div>
+        <div className="later">Maybe later</div>
       </div>
       <Modal className="modal" show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          {/* <Modal.Title>
-            You choose her{" "}
-            <p className="modal-p">
-              You're about to share her a <span>special invite</span>
-            </p>
-          </Modal.Title> */}
-        </Modal.Header>
+        <Modal.Header closeButton></Modal.Header>
         <VerifyButton />
       </Modal>
     </div>

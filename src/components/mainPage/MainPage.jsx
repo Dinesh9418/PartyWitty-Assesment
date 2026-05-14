@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import cardImg from "../../assets/card-img.jpg";
 
 import "./MainPage.css";
 import { Button, Modal } from "react-bootstrap";
@@ -62,7 +63,8 @@ const MainPage = () => {
           <div className="profile-card">
             <div className="image-box">
               <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
+                src={cardImg}
+                // src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
                 alt="girl"
               />
 
@@ -87,14 +89,6 @@ const MainPage = () => {
             </div>
             <p className="drink">Add a drink to introduce yourself</p>
           </div>
-          {/* <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer> */}
         </Modal>
       </div>
     </div>
