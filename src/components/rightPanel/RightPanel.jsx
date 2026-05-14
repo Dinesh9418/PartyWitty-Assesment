@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./RightPanel.css";
+import VerifyButton from "../../pages/verify/VerifyButton";
+import { Link } from "react-router-dom";
+import { Button, Modal } from "react-bootstrap";
 
 const RightPanel = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div>
       <div class="right-panel">
@@ -55,10 +62,26 @@ const RightPanel = () => {
           <p>✅ Build trust with every profile visit</p>
         </div>
 
-        <button class="verify-btn">Get Verified</button>
+        <button class="verify-btn">
+          <Button className="go-btn" variant="primary" onClick={handleShow}>
+            GET VERIFIED
+          </Button>
+        </button>
+
         <p className="get"> Takes less than 60 seconds</p>
         <div class="later">Maybe later</div>
       </div>
+      <Modal className="modal" show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          {/* <Modal.Title>
+            You choose her{" "}
+            <p className="modal-p">
+              You're about to share her a <span>special invite</span>
+            </p>
+          </Modal.Title> */}
+        </Modal.Header>
+        <VerifyButton />
+      </Modal>
     </div>
   );
 };

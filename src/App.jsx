@@ -3,14 +3,18 @@ import Sidebar from "./components/sideBar/SideBar";
 import MainPage from "./components/mainPage/MainPage";
 import "./App.css";
 import RightPanel from "./components/rightPanel/RightPanel";
+import VerifyButton from "./pages/verify/VerifyButton";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="app-container">
-      {/* <Header /> */}
       <Sidebar />
       <MainPage />
       <RightPanel />
+      {/* <Routes>
+        <Route path="/verifybutton" element={<VerifyButton />} />
+      </Routes> */}
     </div>
   );
 }
