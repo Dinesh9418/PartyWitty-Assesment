@@ -2,6 +2,22 @@
   width: 360px;
 }
 
+/* Tablet feed section */
+@media (max-width: 1024px) {
+  .feed-section {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Mobile feed section */
+@media (max-width: 768px) {
+  .feed-section {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .feed-btn {
   background: #6b4cff;
   color: #fff;
@@ -14,6 +30,15 @@
   cursor: pointer;
 }
 
+/* Mobile feed button */
+@media (max-width: 768px) {
+  .feed-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+
 .profile-card {
   background: #fff;
   border-radius: 28px;
@@ -21,11 +46,36 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+/* Mobile profile card */
+@media (max-width: 768px) {
+  .profile-card {
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+}
+
 .image-box {
   position: relative;
   overflow: hidden;
   border-radius: 24px;
   height: 440px;
+}
+
+/* Tablet image box */
+@media (max-width: 1024px) {
+  .image-box {
+    height: 380px;
+    border-radius: 20px;
+  }
+}
+
+/* Mobile image box */
+@media (max-width: 768px) {
+  .image-box {
+    height: 320px;
+    border-radius: 16px;
+  }
 }
 
 .image-box img {
@@ -46,6 +96,14 @@
   left: 20px;
   color: #fff;
   z-index: 2;
+}
+
+/* Mobile profile info */
+@media (max-width: 768px) {
+  .profile-info {
+    bottom: 15px;
+    left: 15px;
+  }
 }
 
 .profile-info h2 {
