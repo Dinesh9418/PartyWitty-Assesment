@@ -3,13 +3,13 @@ import "./SideBar.css";
 
 const Sidebar = () => (
   <>
-    <div class="sidebar">
+    <div className="sidebar">
       <div>
-        <div class="logo">
+        <div className="logo">
           party<span>witty</span>
         </div>
 
-        <ul class="menu">
+        <ul className="menu">
           <li>📋 My Plan</li>
           <li>⚒️ My Bids</li>
           <li>↻ My Booking</li>
@@ -21,35 +21,35 @@ const Sidebar = () => (
         </ul>
       </div>
 
-      <div class="wrapper">
-        <div class="top">
-          <div class="menu-icon">☰</div>
-          <div class="title">More</div>
+      <div className="wrapper">
+        <div className="top">
+          <div className="menu-icon">☰</div>
+          <div className="title">More</div>
         </div>
 
-        <div class="offer-card">
-          <div class="crown">👑</div>
+        <div className="offer-card">
+          <div className="crown">👑</div>
 
-          <div class="offer-text">
+          <div className="offer-text">
             <h3>Corporate Employee Offer</h3>
             <p>1 Month For ₹1</p>
           </div>
         </div>
 
-        <div class="user-card">
-          <div class="user-left">
+        <div className="user-card">
+          <div className="user-left">
             <img
               src="https://randomuser.me/api/portraits/men/32.jpg"
               alt="user"
             />
 
-            <div class="user-info">
+            <div className="user-info">
               <h4>Zeeshan Ahmad</h4>
               <p>Indus Global Pvt Ltd Admin</p>
             </div>
           </div>
 
-          <div class="arrow">↗</div>
+          <div className="arrow">↗</div>
         </div>
       </div>
     </div>
