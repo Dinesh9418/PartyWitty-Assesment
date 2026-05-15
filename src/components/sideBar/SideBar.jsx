@@ -1,5 +1,6 @@
 import React from "react";
 import "./SideBar.css";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => (
   <>
@@ -10,11 +11,21 @@ const Sidebar = () => (
         </div>
 
         <ul className="menu">
-          <li>📋 My Plan</li>
-          <li>⚒️ My Bids</li>
-          <li>↻ My Booking</li>
-          <li>🔍 Search</li>
-          <li>💬 Chat Room</li>
+          <Link to="/WIP" style={{ textDecoration: "none", color: "inherit" }}>
+            <li>📋 My Plan</li>
+          </Link>
+          <Link to="/WIP" style={{ textDecoration: "none", color: "inherit" }}>
+            <li>⚒️ My Bids</li>
+          </Link>
+          <Link to="/WIP" style={{ textDecoration: "none", color: "inherit" }}>
+            <li>↻ My Booking</li>
+          </Link>
+          <Link to="/WIP" style={{ textDecoration: "none", color: "inherit" }}>
+            <li>🔍 Search</li>
+          </Link>
+          <Link to="/WIP" style={{ textDecoration: "none", color: "inherit" }}>
+            <li>💬 Chat Room</li>
+          </Link>
           <li>🔔 Notifications</li>
           <li>🤍 Save & Like</li>
           <li>🎁 Rewards</li>

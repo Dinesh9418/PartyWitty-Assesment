@@ -3,20 +3,25 @@ import Sidebar from "./components/sideBar/SideBar";
 import MainPage from "./components/mainPage/MainPage";
 import "./App.css";
 import RightPanel from "./components/rightPanel/RightPanel";
-import VerifyButton from "./pages/verify/VerifyButton";
 import { Route, Routes } from "react-router-dom";
-import VerifySuccess from "./pages/verify/VerifySuccess";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
+
+// Create a Home component for the main layout
+const Home = () => (
+  <div className="app-container">
+    <Sidebar />
+    <MainPage />
+    <RightPanel />
+  </div>
+);
 
 function App() {
   return (
-    <div className="app-container">
-      <Sidebar />
-      <MainPage />
-      <RightPanel />
-      {/* <Routes>
-        <Route path="/verifybutton" element={<VerifyButton />} />
-      </Routes> */}
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/WIP" element={<ErrorPage />} />
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
   );
 }
 
